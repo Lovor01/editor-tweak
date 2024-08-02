@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * enqueue script
+ * enqueue script only in editor - thats why enqueue_block_editor_assets hook is used
  */
 add_action('enqueue_block_editor_assets', function() {
 	wp_enqueue_script(
@@ -29,5 +29,5 @@ add_action('enqueue_block_editor_assets', function() {
 	);
 });
 
-//  another solution would be with user meta, not yet figured out how
+//  another solution would be with user meta, not yet developed
 // var_dump(get_user_meta(1, 'wp_persisted_preferences', false));
