@@ -2,7 +2,7 @@
 
 ## An example to showcase setting editor preferences based on user data
 
-1. This is a WordPress plugin. Create a new folder in wp-content/plugins and put `my-plugin.php` and `editor-tweak.js` there. `editor-tweak-role-examples.js` is not needed, it is just a backup copy, because original request was to change preferences according to user roles and this may help someone as showcase in future
+1. This is a plugin. Create a new folder in wp-content/plugins and put `my-plugin.php` and `editor-tweak.js` there. `editor-tweak-role-examples.js` is not needed, it is just a backup copy, because original request was to change preferences according to user roles and this may help someone as showcase in future
 2. Activate plugin in WordPress
 
 ## Usage
