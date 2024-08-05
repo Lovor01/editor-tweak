@@ -7,13 +7,16 @@
 
 ## Usage
 
-You can call function with a single namespace-key-value triple, then it sets just one preference. As a second parameter, put username if you want to limit setting this preference just for this username.
+You can call function with a single namespace-key-value triple, then it sets just one preference. You can also use array of preferences, as in second example. As a second parameter:
+* put username if you want to limit setting this preference just for this username. As a third parameter you must use 'username'
+* use role slug as a second parameter to limit this setting just for this role. As a third parameter you must use 'role'
 
 ```
-setUsernamePreferences({namespace: 'core', key: 'showIconLabels', value: true}, 'admin');
+setUsernamePreferences({namespace: 'core', key: 'showIconLabels', value: true}, 'admin', 'username');
+setUsernamePreferences({namespace: 'core', key: 'showIconLabels', value: true}, 'administrator', 'role');
 ```
 
-You can call function with multiple triplets, all triplets are objects, but these objects are inside array. Here, second parameter of the function is omitted, which means these preferences will be set for all users.
+You can call function with multiple triplets, all triplets are objects, but these objects are inside array. Here, second parameter and third parameters of the function are omitted, which means these preferences will be set for all users.
 
 ```
 setUsernamePreferences([
